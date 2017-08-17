@@ -1,7 +1,7 @@
 import org.springframework.beans.factory.annotation.Value;
 
 
-public class greet {
+public class Greet {
     String message;
 @Value("hi Good morning")
     public void setMessage(String message){

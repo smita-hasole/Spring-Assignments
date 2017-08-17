@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
         App app = new App();
-         ApplicationContext context = new AnnotationConfigApplicationContext(HelloConfiguration.class,config.class,conf.class);
+         ApplicationContext context = new AnnotationConfigApplicationContext(HelloConfiguration.class, Config.class,JavaConfiguration.class);
 //        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 //        context.register(HelloConfiguration.class);
 //
@@ -18,11 +18,11 @@ public class App {
         Hello hello = context.getBean(Hello.class);
         //.setMessage("Hello World bbbbbbbb!");
         hello.getMessage();
-        //context.register(config.class);
-        greet gt = (greet)context.getBean(greet.class);
+        //context.register(Config.class);
+        Greet gt = (Greet)context.getBean(Greet.class);
         gt.getMessage();
 
-hhhhh h =(hhhhh)context.getBean(hhhhh.class);
+HelloWorld h =(HelloWorld)context.getBean(HelloWorld.class);
 h.getMessage();
     }
 }

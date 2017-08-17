@@ -1,6 +1,6 @@
 import org.springframework.beans.factory.annotation.Value;
 
-public class hhhhh {
+public class HelloWorld {
     String message;
     @Value("hi morning")
     public void setMessage(String message){

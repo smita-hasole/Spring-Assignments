@@ -3,11 +3,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
     @Configuration
-    public class conf {
+    public class JavaConfiguration {
         @Bean(name="g")
         @Scope("prototype")  // by defalut scope is singleton
-        public hhhhh helloWorld(){
-            return new hhhhh();
+        public HelloWorld helloWorld(){
+            return new HelloWorld();
         }
     }
 

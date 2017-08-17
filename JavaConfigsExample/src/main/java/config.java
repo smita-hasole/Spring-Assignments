@@ -4,11 +4,11 @@ import org.springframework.context.annotation.Scope;
 
 
     @Configuration
-    public class config {
+    public class Config {
         @Bean(name="greetBean")
         @Scope("prototype")  // by defalut scope is singleton
-        public greet helloWorld(){
-            return new greet();
+        public Greet helloWorld(){
+            return new Greet();
         }
     }
 
